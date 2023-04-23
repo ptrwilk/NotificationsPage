@@ -1,0 +1,179 @@
+@import url('../colors.css');
+
+.container{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0 1.5rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    background: var(--white);
+    font-size: 10px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+
+.notifications{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.notifications .text{
+    font-weight: 800;
+    font-size: 2.3em;
+}
+
+.notifications .number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    background: var(--blue);
+}
+
+.notifications .number .value{
+    padding: .2rem .8rem;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.header .btn-mark{
+    padding: 0;
+    font-size: 1.5em;
+    text-transform: none;
+    color: var(--darkgrayishblue);
+}
+
+.header .btn-mark:hover{
+    background: transparent;
+    color: var(--blue);
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.card{
+    display: flex;
+    gap: 1.5rem;
+    max-width: 700px;
+    padding: 1rem 1.5rem;
+    border-radius: .7rem;
+}
+
+.card .right{
+    width: 100%;
+}
+
+.card-notification{
+    background: var(--verylightgrayishblue);
+}
+
+.card .img-avatar{
+    width: 50px;
+    height: 50px;
+}
+
+.card .top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .content .name{
+    font-size: 1.4em;
+    font-weight: 800;
+    white-space: nowrap;
+    cursor: pointer;
+    color: var(--verydarkblue);
+}
+
+.card .content .name:hover{
+    color: var(--blue);
+}
+
+.card .content .name span{
+    white-space: normal;
+}
+
+.card .content .text{
+    margin-left: .5rem;
+    font-weight: 500;
+    color: var(--darkgrayishblue);
+}
+
+.card .content .additional-info{
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+.card .content .additional-info:hover{
+    color: var(--blue);
+}
+
+.card .content .bold{
+    font-weight: 800;
+    color: var(--darkgrayishblue);
+}
+
+.card .content .club{
+    color: var(--blue);
+}
+
+.card .content .notification-shape{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: .5rem;
+    border-radius: 50%;
+    background: var(--red);
+}
+
+.card .content .time{
+    margin-top: .2rem;
+    font-size: 1.3em;
+    color: var(--grayishblue);
+}
+
+.card .top .img-picture{
+    width: 50px;
+    height: 50px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.card .message-container{
+    margin-top: .8rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1.5px solid var(--lightgrayishblue2);
+    cursor: pointer;
+}
+
+.card .message-container:hover{
+    background: var(--lightgrayishblue1);
+}
+
+.card .message{
+    font-size: 1.4em;
+    color: var(--darkgrayishblue);
+}
+
+@media (min-width : 600px) {
+    .container{
+        font-size: 11px;
+    }
+}
+
+@media (min-width : 800px) {
+    .container{
+        font-size: 12px;
+    }
+}
